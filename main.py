@@ -9,7 +9,7 @@ from beer_db import BeerDataBase, BeerModel
 
 beer_repository = BeerRepository("beers.json")
 
-engine = create_engine("mysql+mysqlconnector://root:asd255@localhost/girrafe")
+engine = create_engine("mysql+mysqlconnector://root:passlocalhost/girrafe")
 beer_repository_db = BeerDataBaseRepository(engine)
 BeerDataBase.metadata.create_all(engine)
 
